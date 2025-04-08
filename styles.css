@@ -1,0 +1,114 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #Ccf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.calendar-controls {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.calendar-controls label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.calendar-controls select,
+.calendar-controls button {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #86298a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #e0e0e0;
+}
+
+.empty {
+    background-color: #f9f9f9;
+}
+
+td:not(.empty):hover {
+    background-color: #cce5ff;
+}
+
+
+#event-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#event-input {
+    padding: 5px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#event-list {
+    margin-top: 20px;
+}
+
+#event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#event-list li {
+    padding: 5px;
+    background-color: #e9f7fa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
